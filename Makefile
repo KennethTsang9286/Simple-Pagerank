@@ -41,7 +41,7 @@ searchPagerank: searchPagerank.o DLListStr.o helper.o Triple.o read_file.o
 	$(CC) -o searchPagerank searchPagerank.o DLListStr.o helper.o Triple.o
 
 clear: 
-	rm  ./*.txt ./*.o pagerank inverted searchPagerank
+	rm invertedIndex.txt pagerankList.txt ./*.o pagerank inverted searchPagerank
 
 test:
 	./pagerank 0.85  0.00001  1000
